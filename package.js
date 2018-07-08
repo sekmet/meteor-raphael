@@ -1,14 +1,13 @@
 Package.describe({
   summary: "Raphael - JavaScript Vector Library",
   version: "0.1.0",
-  git: "https://github.com/Agnito/meteor-raphael.git",
-  name: "agnito:raphael"
+  git: "https://github.com/sekmet/meteor-raphael.git",
+  name: "skt:raphael"
 });
 
-Package.onUse(function (api, where) {
-  api.versionsFrom("1.0");
-  api.use('jquery');
-  api.addFiles('raphael.js', 'client');
-  api.export('Raphael', 'client');
+Package.onUse((api) => {
+  api.versionsFrom("1.4");
+  api.use('jquery', 'client', {weak: true});
+  api.mainModule('raphael.js', 'client';
 });
 
