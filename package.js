@@ -8,6 +8,6 @@ Package.describe({
 Package.onUse((api) => {
   api.versionsFrom("1.4");
   api.use('jquery', 'client', {weak: true});
-  api.mainModule('raphael.js', 'client';
+  api.mainModule('raphael.js', 'client');
 });
 
